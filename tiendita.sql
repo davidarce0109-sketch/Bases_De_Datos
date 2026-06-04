@@ -43,6 +43,9 @@ where id_producto= 14;
 DELETE FROM productos 
 WHERE id_producto = 4;
 
+
+use tiendita;
+
 create table proovedores( 
 id_proovedores int primary key auto_increment,
 nombre_proovedor varchar(50),
@@ -54,9 +57,6 @@ unidades_producto varchar(100),
 precio_pormayor_producto decimal (10,0)
 );
 
-use tiendita;
-SELECT * FROM tiendita.proovedores;
-
 insert into proovedores (nombre_proovedor, telefono, direccion, correo_proovedor, descripcion_producto, unidades_producto, precio_pormayor_producto)
 values
 ("carnes aqui", "3406659685", "carrera23 #37-45", "carnesaqui@gmail.com", "carne de cerdo", "10Lb", 80000),
@@ -64,3 +64,5 @@ values
 ("carnes aqui", "3406659685", "carrera23 #37-45", "carnesaqui@gmail.com",  "costillas de cerdo", "10Lb", 104000),
 ("compre pollo", "3406659685", "calle33 #28-39", "comprepollo@gmail.com",  "pernil", "20und", 96000),
 ("compre pollo", "3406659685", "calle33 #28-39", "comprepollo@gmail.com", "alas", "80und", 96000);
+
+SELECT * FROM tiendita.proovedores;
